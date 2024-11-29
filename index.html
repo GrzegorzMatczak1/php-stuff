@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="script.php" method="post">
+
+        Nazwisko:<br>
+        <input type="text" name="nazwisko" required><br><br>
+        Imię:<br>
+        <input type="text" name="imie" required><br><br>
+        Zawód:<br>
+        <input type="text" name="zawod" required><br><br>
+        Adres e-mail:<br>
+        <input type="email" name="email" required><br><br>
+
+        Wykształcenie:<br>
+        Podstawowe: <input type="radio" name="wyksztalcenie" id="wyksztalcenie" value="podstawowe" checked><br>
+        Średnie: <input type="radio" name="wyksztalcenie" id="wyksztalcenie" value="średnie"><br>
+        Wyższe: <input type="radio" name="wyksztalcenie" id="wyksztalcenie" value="wyższe"><br><br>
+        
+        Znajomość języków:<br>
+        <select name="jezyki[]" multiple required>
+
+            <option value="angielski">Angielski</option>
+            <option value="niemiecki">Niemiecki</option>
+            <option value="francuski">Francuski</option>
+            <option value="włoski">Włoski</option>
+            <option value="rosyjski">Rosyjski</option>
+            <option value="hiszpański">Hiszpański</option>
+
+        </select><br><br>
+
+        Zgoda na przetwarzanie danych osobowych: 
+        <input type="checkbox" name="zgoda" required><br><br>
+
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+
+
+    </form>
+
+</body>
+</html>
